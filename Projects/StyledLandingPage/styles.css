@@ -1,0 +1,391 @@
+/* Global Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(240, 240, 240);
+}
+
+.blue {
+  color: rgb(67, 105, 195);
+}
+
+/* Header Styles */
+
+header {
+  padding-bottom: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  font-size: 30px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+header ul {
+  list-style: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+  list-style: none;
+}
+
+header a:hover {
+  color: rgb(67, 105, 195);
+  transition: 0.3s;
+}
+
+/* Tablet Header Styles */
+
+@media (min-width: 600px) {
+  header nav {
+    display: flex;
+    justify-content: center;
+  }
+
+  header nav ul {
+    width: 40%;
+    justify-content: space-around;
+  }
+}
+
+/* Desktop Header Styles */
+
+@media (min-width: 1024px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+  }
+
+  /* I have no idea why this works */
+
+  header nav {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+  }
+
+  header nav ul {
+    width: 100%;
+  }
+}
+
+/* Home Section Styles */
+
+.home {
+  margin-top: 40px;
+}
+
+.home h2 {
+  font-size: 30px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+}
+
+.home p {
+  font-size: 18px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 20px;
+  max-width: 600px;
+  color: gray;
+  line-height: 1.6;
+}
+
+.home button {
+  background-color: rgb(67, 105, 195);
+  color: white;
+  border: none;
+  padding: 20px 35px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#right-button {
+  background-color: white;
+  color: rgb(67, 105, 195);
+  border: 2px solid rgb(67, 105, 195);
+}
+
+.home button:hover {
+  background-color: rgb(50, 80, 150);
+  transition: 0.3s;
+}
+
+#right-button:hover {
+  background-color: rgb(50, 80, 150);
+  color: white;
+  border-color: rgb(50, 80, 150);
+  transition: 0.3s;
+}
+
+.home .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.home img {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablet Home Section Styles */
+
+@media (min-width: 600px) {
+  .home h2 {
+    font-size: 40px;
+  }
+
+  .home p {
+    font-size: 20px;
+  }
+
+  .home img {
+    width: 50%;
+  }
+}
+
+/* Desktop Home Section Styles */
+
+@media (min-width: 1024px) {
+  .home {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    gap: 40px;
+  }
+
+  .home h2 {
+    font-size: 60px;
+  }
+
+  .home .buttons {
+    justify-content: flex-start;
+    margin-left: 45px;
+  }
+
+  .home img {
+    width: 40%;
+    margin-right: 50px;
+  }
+}
+
+/* Features Section Styles */
+
+.features {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.features h2 {
+  margin: 0 50px;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.features h4 {
+  margin-bottom: 20px;
+}
+
+.features p {
+  color: gray;
+  line-height: 1.6;
+}
+
+.features .feature-cards {
+  align-items: center;
+  width: 300px;
+  padding: 2rem 1rem;
+  border-radius: 2px;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1);
+}
+
+.emoji {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+
+.card-container .feature-cards:hover {
+  box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.2);
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+/* About Section Styles */
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.about h2 {
+  font-size: 40px;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 60px;
+}
+
+.about p {
+  max-width: 600px;
+  margin: 0 15px;
+  font-size: 20px;
+  color: gray;
+  line-height: 1.6;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.stats h4 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.about img {
+  width: 70%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Desktop About Section Styles */
+
+@media (min-width: 1024px) {
+  .about {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+  }
+
+  .about img{
+    width: 75%;
+    margin-right: 40px;
+  }
+
+  .about h2{
+    font-size: 35px;
+
+  }
+
+  .stats-container{
+    margin: 0;
+  }
+  .stats h4{
+    font-size: 30px;
+  }
+
+  .stats p{
+    font-size: 18px;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: rgb(32, 41, 66);
+  color: white;
+  text-align: left;
+  padding: 50px 0;
+  padding-left: 25px;
+  margin-top: 50px;
+}
+
+footer h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+footer h3 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin-bottom: 20px;
+  max-width: 400px;
+  color: lightgray;
+  line-height: 1.6;
+}
+
+footer ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+footer li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+footer a {
+  text-decoration: none;
+  color: lightgray;
+}
+
+footer a:hover {
+  color: white;
+  transition: 0.3s;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: gray;
+  font-size: 14px;
+  border-top: 2px solid gray;
+  padding-top: 20px;
+}
